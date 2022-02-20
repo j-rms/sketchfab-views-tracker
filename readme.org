@@ -23,4 +23,6 @@ Tracks the view counts of a given set of Sketchfab model pages.
    + create files representing each model whose view count you want to track (if it has not previously created them);
    + append a new line to the bottom of each model's file containing the current date and the current view count.
 ** Suggested usage
-   Set a cron job to run the script as frequently as you would like to collect data.
+   Set a cron job to run =sketchfab-views-tracker.sh= as frequently as you would like to collect data.
+** Automating collection, then committing and pushing the updated data to the repo
+   Set a cron job to run =update-and-commit.sh= as frequently as you would like to collect data and push the updated data to the repo.  Edit the script to provide it with the correct project directory.
