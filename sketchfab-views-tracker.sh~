@@ -1,0 +1,5 @@
+#!/bin/bash
+# tracks the number of views for models on Sketchfab
+
+date={date +%F-%R}
+echo $date

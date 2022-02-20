@@ -1,8 +1,6 @@
 #!/bin/bash
-# counts the number of views on a single Sketchfab page
 
-temp_dir='/tmp/' # set a temporary directory to store the downloaded page
-
+temp_dir='/home/joel/temp/' # set a temporary directory to store the downloaded page
 page_to_dl=$1 # store the input passed to the script in the variable $page_to_dl
 
 cd $temp_dir # move into the temporary directory (to keep things tidy)
