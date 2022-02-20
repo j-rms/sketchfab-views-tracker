@@ -7,7 +7,7 @@ Tracks the view counts of a given set of Sketchfab model pages.
    + =pages_to_watch= :: This should point at the filename in which you want to store the list of Sketchfab model pages to watch.  This file must exist.
    + =data_dir=  :: This should point at the directory where you want the resulting data to end up.
 ** Configuring =pages-to-watch.txt= (or whatever filename you choose)
-   Every line of =pages-to-watch.txt= (or whatever filename you choose) should contain an address of a Sketchfab model whose views you want to track.  (This repo provides a version of =pages-to-watch.txt= pre-populated with the web addresses of 6 models published by https://sketchfab.com/LivAncWorlds/models.)
+   Every line of =pages-to-watch.txt= (or whatever filename you choose) should contain an address of a Sketchfab model whose views you want to track.  (This repo provides a version of =pages-to-watch.txt= pre-populated with the web addresses of many models published by https://sketchfab.com/LivAncWorlds/models.)
 
    It is safe to add new models at any point.  Deleting a line from this file will not delete any data previously collected. 
 ** Quickstart
