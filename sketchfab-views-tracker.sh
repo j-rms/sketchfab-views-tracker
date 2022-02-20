@@ -3,7 +3,7 @@
 
 # VARIABLES TO CONFIGURE:
 # the location of the pages_to_watch file:
-pages_to_watch="/home/$USER/projects/sketchfab-views-tracker/data/pages-to-watch.txt"
+pages_to_watch="/home/$USER/projects/sketchfab-views-tracker/pages-to-watch.txt"
 # the location where you want the data to end up:
 data_dir="/home/$USER/projects/sketchfab-views-tracker/data/"
 
