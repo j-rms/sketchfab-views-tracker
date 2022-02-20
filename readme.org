@@ -1,13 +1,26 @@
 #+TITLE: Sketchfab views tracker
 Tracks the view counts of a given set of Sketchfab model pages.
-* Configuration
-  Copy =sketchfab-views-tracker.sh= wherever you want to keep it.
-** =sketchfab-views-tracker.sh=
+** Configuration
+   Copy =sketchfab-views-tracker.sh= wherever you want to keep it, and make it executable (=chmod +x sketchfab-views-tracker.sh=).
+** Configuring =sketchfab-views-tracker.sh=
    Customize the following variables:
    + =pages_to_watch= :: This should point at the filename in which you want to store the list of Sketchfab model pages to watch.  This file must exist.
    + =data_dir=  :: This should point at the directory where you want the resulting data to end up.
-** =pages-to-watch.txt= (or whatever file you have =pages_to_watch= point at)
+** Configuring =pages-to-watch.txt= (or whatever filename you choose)
    Every line of =pages-to-watch.txt= (or whatever filename you choose) should contain an address of a Sketchfab model whose views you want to track.  (This repo provides a version of =pages-to-watch.txt= pre-populated with the web addresses of 6 models published by https://sketchfab.com/LivAncWorlds/models.)
 
    It is safe to add new models at any point.  Deleting a line from this file will not delete any data previously collected. 
+** Quickstart
+   Simply run the script:
 
+   #+begin_src 
+   ./sketchfab-views-tracker.sh
+   #+end_src
+
+   Each time you run the script, it will:
+
+   + create the data directory (if you have not already created it);
+   + create files representing each model whose view count you want to track (if it has not previously created them);
+   + append a new line to the bottom of each model's file containing the current date and the current view count.
+** Suggested usage
+   Set a cron job to run the script as frequently as you would like to collect data.
