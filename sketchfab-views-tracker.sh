@@ -3,9 +3,9 @@
 
 # VARIABLES TO CONFIGURE:
 # the location of the pages_to_watch file:
-pages_to_watch="/home/$USER/projects/sketchfab-views-tracker/pages-to-watch.txt"
+pages_to_watch="/home/joel/projects/sketchfab-views-tracker/pages-to-watch.txt"
 # the location where you want the data to end up:
-data_dir="/home/$USER/projects/sketchfab-views-tracker/data/"
+data_dir="/home/joel/projects/sketchfab-views-tracker/data/"
 
 # touch "$pages_to_watch" # create the pages_to_watch file, in case it does not already exist
 mkdir -p $data_dir # make the data directory, if it does not already exist.
