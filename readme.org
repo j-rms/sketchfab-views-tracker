@@ -1,13 +1,13 @@
 #+TITLE: Sketchfab views tracker
-Tracks the view counts of a given set of Sketchfab model pages.
+Tracks the number of views for LivAncWorlds' Sketchfab models.
 ** Configuration
    Copy =sketchfab-views-tracker.sh= wherever you want to keep it, and make it executable (=chmod +x sketchfab-views-tracker.sh=).
 ** Configuring =sketchfab-views-tracker.sh=
    Customize the following variables:
-   + =pages_to_watch= :: This should point at the filename in which you want to store the list of Sketchfab model pages to watch.  This file must exist.
+   + =pages_to_watch= :: This should point at the filename in which you want to store the list of Sketchfab model pages to watch.  This file must exist.  Currently it points at =pages-to-watch.txt=.
    + =data_dir=  :: This should point at the directory where you want the resulting data to end up.
 ** Configuring =pages-to-watch.txt= (or whatever filename you choose)
-   Every line of =pages-to-watch.txt= (or whatever filename you choose) should contain an address of a Sketchfab model whose views you want to track.  (This repo provides a version of =pages-to-watch.txt= pre-populated with the web addresses of many models published by https://sketchfab.com/LivAncWorlds/models.)
+   Every line of =pages-to-watch.txt= (or whatever filename you choose) should contain an address of a Sketchfab model whose views you want to track.  (This repo's version of =pages-to-watch.txt= currently includes the web addresses of all models published by https://sketchfab.com/LivAncWorlds/models.)
 
    It is safe to add new models at any point.  Deleting a line from this file will not delete any data previously collected. 
 ** Quickstart
@@ -22,7 +22,7 @@ Tracks the view counts of a given set of Sketchfab model pages.
    + create the data directory (if you have not already created it);
    + create files representing each model whose view count you want to track (if it has not previously created them);
    + append a new line to the bottom of each model's file containing the current date and the current view count.
-** Suggested usage
+** Local usage
    Set a cron job to run =sketchfab-views-tracker.sh= as frequently as you would like to collect data.
-** Automating collection, then committing and pushing the updated data to the repo
+** Automating collection, then committing and pushing the updated data to this Github repo
    Set a cron job to run =update-and-commit.sh= as frequently as you would like to collect data and push the updated data to the repo.  Edit the script to provide it with the correct project directory.
