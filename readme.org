@@ -13,7 +13,7 @@ Tracks the number of views for LivAncWorlds' Sketchfab models.  Currently tracki
 ** Quickstart
    Simply run the script:
 
-   #+begin_src 
+   #+begin_src shell
    ./sketchfab-views-tracker.sh
    #+end_src
 
@@ -25,4 +25,9 @@ Tracks the number of views for LivAncWorlds' Sketchfab models.  Currently tracki
 ** Local usage
    Set a cron job to run =sketchfab-views-tracker.sh= as frequently as you would like to collect data.
 ** Automating collection, then committing and pushing the updated data to this Github repo
-   Set a cron job to run =update-and-commit.sh= as frequently as you would like to collect data and push the updated data to the repo.  Edit the script to provide it with the correct project directory.
+   The script =update-and-commit.sh= will run =sketchfab-views-tracker.sh=, then push the updated data to the Github repo.
+   Edit =update-and-commit.sh= to provide it with the correct project directory.  Then, set a cron job to run this script as frequently as you would like, e.g. daily at midnight:
+
+   #+begin_src shell
+   0 0 * * * cd /home/joel/projects/sketchfab-views-tracker/ ; ./update-and-commit.sh
+   #+end_src
