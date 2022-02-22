@@ -1,5 +1,5 @@
 #+TITLE: Sketchfab views tracker
-Tracks the number of views for LivAncWorlds' Sketchfab models.
+Tracks the number of views for LivAncWorlds' Sketchfab models.  Currently tracking daily viewing numbers and pushing them to the =data= directory.
 ** Configuration
    Copy =sketchfab-views-tracker.sh= wherever you want to keep it, and make it executable (=chmod +x sketchfab-views-tracker.sh=).
 ** Configuring =sketchfab-views-tracker.sh=
