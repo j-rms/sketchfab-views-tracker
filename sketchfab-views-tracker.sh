@@ -10,7 +10,7 @@ mkdir -p $data_dir  # make the data directory, if it does not already exist.
 date=$(date +%F-%R) # get exact date in format YYYY-MM-DD-HH:SS
 
 function get_viewcount_from_page {
-    page_to_dl=$1 # store the input passed to the script in the variable $page_to_dl
+    page_to_dl=$1                                    # store the input passed to the script in the variable $page_to_dl
     wget -q $page_to_dl -O temp_page.html            # download the given page, and name it temp_page.html. Use -q to perform this silently.
     sed -i 's/<div/\n/g' temp_page.html              # chop the page up into greppable lines by replacing all instances of "<div" with "\n<div" (i.e. <div preceded by a newline):
     grep 'icon-eye-icon' temp_page.html > views_line # get the line that includes the phrase "icon-eye-icon" and spit it out into its own file, which will contain something like: class="icon custom-icons icon-eye-icon"></div><span class="count">3.2k</span>
