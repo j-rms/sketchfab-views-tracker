@@ -1,5 +1,5 @@
-#+title: Livancworlds Sketchfab page view counts
-NOTE: VIEW COUNTS OVER 1000 ARE PRECISE TO 2 SIGNIFICANT FIGURES
+#+title: Daily report of LivAncWorlds' Sketchfab models' view count
+NOTE: VIEW COUNTS OVER 1000 ARE ACCURATE TO 2 SIGNIFICANT FIGURES
 
 | *object* | *view counts* |
 | felted robin personal objects | 2022-02-25: 2    |
