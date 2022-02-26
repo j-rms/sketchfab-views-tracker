@@ -85,9 +85,9 @@ for object in list_of_object_dictionaries:
 print("#+title: Daily report of LivAncWorlds' Sketchfab models' view count", end='\n')
 print("NOTE: VIEW COUNTS OVER 1000 ARE ACCURATE TO 2 SIGNIFICANT FIGURES", end='\n')
 print("", end='\n')
-print("| *object* | *view counts* |")
+print("| *object* | *view counts* | | | | | | |")
 for object in daily_object_dictionaries:
     pretty_views = ""
     for view in reversed(object['views_by_date']):
-        pretty_views = pretty_views + view[0] + ": " + str(view[1]) + "   "
-    print("|", object['name'], "|", pretty_views, "|")
+        pretty_views = pretty_views + view[0] + ": " + str(view[1]) + " | "
+    print("|", object['name'], "|", pretty_views)
