@@ -1,6 +1,7 @@
 #+title: Livancworlds Sketchfab page view counts
 NOTE: VIEW COUNTS OVER 1000 ARE PRECISE TO 2 SIGNIFICANT FIGURES
 
+| *object* | *view counts* |
 | felted robin personal objects | 2022-02-25: 2    |
 | horse femur department of veterinary pathology | 2022-02-25: 2    |
 | famine memorial plaque mullberry st liverpool | 2022-02-25: 21   2022-02-24: 21   2022-02-23: 21   2022-02-22: 21   2022-02-21: 21   2022-02-20: 21    |
