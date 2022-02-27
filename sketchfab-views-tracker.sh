@@ -36,4 +36,4 @@ cd $data_dir
 while read line; do write_updated_viewcount "$line"; done < $pages_to_watch
 
 # generate daily view counts org file:
-python3 data-reading.py > daily-views-report.org
+python3 data-reading.py > /home/joel/projects/sketchfab-views-tracker/daily-views-report.org
