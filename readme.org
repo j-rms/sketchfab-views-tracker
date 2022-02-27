@@ -1,7 +1,5 @@
 #+TITLE: Sketchfab views tracker
-Tracks the number of views for LivAncWorlds' Sketchfab models.  Currently tracking daily viewing numbers and pushing them to the =data= directory.
-
-For the daily view count report, visit https://github.com/j-rms/sketchfab-views-tracker/blob/master/daily-views-report.org
+Tracks the number of views for [[https://sketchfab.com/LivAncWorlds/models][LivAncWorlds' Sketchfab models]].  Visit the [[https://github.com/j-rms/sketchfab-views-tracker/blob/master/daily-views-report.org][daily view count report]].
 ** Configuration
    Copy =sketchfab-views-tracker.sh= wherever you want to keep it, and make it executable (=chmod +x sketchfab-views-tracker.sh=).
 ** Configuring =sketchfab-views-tracker.sh=
@@ -9,7 +7,7 @@ For the daily view count report, visit https://github.com/j-rms/sketchfab-views-
    + =pages_to_watch= :: This should point at the filename in which you want to store the list of Sketchfab model pages to watch.  This file must exist.  Currently it points at =pages-to-watch.txt=.
    + =data_dir=  :: This should point at the directory where you want the resulting data to end up.
 ** Configuring =pages-to-watch.txt= (or whatever filename you choose)
-   Every line of =pages-to-watch.txt= (or whatever filename you choose) should contain an address of a Sketchfab model whose views you want to track.  (This repo's version of =pages-to-watch.txt= currently includes the web addresses of all models published by https://sketchfab.com/LivAncWorlds/models.)
+   Every line of =pages-to-watch.txt= (or whatever filename you choose) should contain an address of a Sketchfab model whose views you want to track.  (This repo's version of =pages-to-watch.txt= currently includes the web addresses of all models published by [[https://sketchfab.com/LivAncWorlds/models][LivAncWorlds]].)
 
    It is safe to add new models at any point.  Deleting a line from this file will not delete any data previously collected. 
 ** Quickstart
