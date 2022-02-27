@@ -37,3 +37,4 @@ while read line; do write_updated_viewcount "$line"; done < $pages_to_watch
 
 # generate daily view counts org file:
 python3 /home/joel/projects/sketchfab-views-tracker/data-reading.py > /home/joel/projects/sketchfab-views-tracker/daily-views-report.org
+ex -s -c '5,$ sort|x' /home/joel/projects/sketchfab-views-tracker/daily-views-report.org # sort the relevant portion of the report (from line 5 onward) in alphabetical order
