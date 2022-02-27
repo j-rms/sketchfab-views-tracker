@@ -64,6 +64,7 @@ def make_daily_object_dictionary(object_dictionary):
         last_date_as_number = this_date_as_number
         last_date = entry[0]
         last_viewcount = entry[1]
+        cleaned_daily_views_list.append([last_date, last_viewcount]) # append the final entry
 
     new_dictionary = {'name': object_dictionary['name'],
                       'views_by_date': cleaned_daily_views_list}
